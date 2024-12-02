@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultima hora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./app.css">
+    <script type="module" src="./src/index.js"></script>
+</head> 
+<body>
+    <header-component>
+        <featured-news-component slot="header-top-bar"></featured-news-component>
+        <editorial-component slot="header-top-bar"></editorial-component>
+        <menu-icon-component slot="header-main-bar"></menu-icon-component>
+        <logo-component slot="header-main-bar"></logo-component>
+        <user-area-component slot="header-main-bar"></user-area-component>
+        <menu-component slot="header-bottom-bar"></menu-component>
+    </header-component>
+    <main-component>
+        <ad-banner-component image="https://tpc.googlesyndication.com/simgad/2250964147441875354" width="100%"></ad-banner-component>
+        <item-gallery-component>
+            <row-component>
+                <item-component 
+                    image="./images/masfuncionariosueldos.jpg"
+                    category="TRIBUNALES"
+                    title="Más de 40.000 funcionarios cobrarán unos 2.000 euros extra tras anularse la congelación de sus sueldos"
+                    description="El Govern propone pagar esta deuda a plazos durante los próximos cinco años."
+                    author="Nekane Domblas"
+                >
+                </item-component>
+            </row-component>
+            <row-component>
+                <item-component 
+                    image="./images/normaduvaldeclara.jpg"
+                    category="LOCAL"
+                    title="Norma Duval declara en Inca como testigo por un accidente laboral en su casa"
+                    author="Victor Malagon"
+                >
+                </item-component>
+                <item-component 
+                    image="./images/turistacoreano.jpg"
+                    category="SUCESOS"
+                    title="Fallece un turista coreano mientras realizaba snorkel cerca des Caló des Moro"
+                    author="Juan P. Martinez"
+                >
+                </item-component>
+            </row-component>
+        </item-gallery-component>
+        <ad-banner-component image="https://s0.2mdn.net/simgad/4122254949064743983" width="25%"></ad-banner-component>
+        <ad-banner-component image="https://s0.2mdn.net/simgad/4122254949064743983" width="25%"></ad-banner-component>
+        <item-gallery-component>
+            <row-component>
+                <item-component 
+                    image="./images/prohens.jpg"
+                    category="LOCAL"
+                    title="Prohens defiende en Bruselas reindustrializar Baleares para reducir su dependencia turística"
+                    author="Kike Onate"
+                >
+                </item-component>
+                <item-component 
+                    image="./images/proyectosolar.jpg"
+                    category="Branded content"
+                    title="Oportunidad de inversión para el nuevo Proyecto Solar Son Castelló"
+                    author="Redaccion Monograficos"
+                >
+                </item-component>
+                <item-component 
+                    image="./images/alquiler.jpg"
+                    category="VIVIENDA"
+                    title="El alquiler de temporada se dispara en Palma para 'burlar' la ley"
+                    author="Alicia Mateos"
+                >
+                </item-component>
+            </row-component>
+            <row-component>
+                <item-component 
+                    image="./images/mercapalma.jpg"
+                    category="PALMA"
+                    title="El PP aprueba con Més y Unidas Podemos ir al Supremo por Mercapalma"
+                    author="Blanca Pou"
+                >
+                </item-component>
+                <item-component 
+                    image="./images/borrasca.jpg"
+                    category="ANDRATX"
+                    title="La borrasca ‘Ex-Kirk’ causa desperfectos en el Port d’Andratx"
+                    author="Jordi Nicolau"
+                >
+                </item-component>
+            </row-component>
+        </item-gallery-component>
+    </main-component>
+</body>
+</html>

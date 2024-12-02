@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+img, picture{
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+header{ 
+    background-color: transparent; 
+}
+
+
+.header-top-bar{
+    align-items: center;
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.featured-news ul{
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.featured-news ul li{
+    font-family: Roboto, "Helvetica Neue", Arial;
+    font-size: .75rem;
+}
+
+.featured-news ul li:not(:first-child):not(:last-child)::after {
+    padding-left: .25rem;
+    content: "-";
+}
+
+.featured-news ul li:first-child{
+    text-transform: uppercase;
+    color: hsl(0, 100%, 50%);
+    font-weight: 700;
+}
+
+.featured-news ul li:first-child::after{
+    content: ":";
+}
+
+.editorial ul{
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.editorial ul li:not(:last-child) a::after {
+    padding-left: .25rem;
+    content: "|";
+}
+
+.header-main-bar{
+    align-items: center;
+    background-color: hsl(0, 100%, 40%);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+}
+
+.menu-icon svg{
+    fill: hsl(0, 0%, 100%);
+    width: 2rem;
+}
+
+.logo svg{ 
+    fill: hsl(0, 0%, 100%);
+    width: 15rem;
+}
+
+.user-area{
+    display: flex;
+    gap: 1rem;
+}
+
+.user-area .register-button button{
+   background-color: hsl(47, 100%, 50%); 
+   border-radius: 0.5rem;
+   padding: 0.5rem 1rem;
+   font-style: italic;
+   font-weight: 600;
+}
+
+.user-area .login-button button{
+    background-color: hsl(0, 23%, 83%);
+    display: flex;
+    gap: 0.2rem;
+    padding: 0.30rem 1rem;
+    align-items: center;
+    font-size: .85rem;
+    font-weight: 400;
+    white-space: nowrap;
+    border-radius: 0.5rem;
+}
+
+.user-area .login-button button svg{
+    width: 1.5rem;
+}
+
+
+.header-bottom-bar{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.header-bottom-bar .menu ul{
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0.2rem 10%;
+}
+
+.header-bottom-bar .menu ul li{
+    font-family: Roboto, "Helvetica Neue", Arial;
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.header-bottom-bar .menu ul li:first-child{
+    fill: hsl(0, 0%, 0%);
+    width: 1.7rem;
+}
+
+.header-bottom-bar .menu ul li:last-child{
+    fill: hsl(0, 0%, 0%);
+    width: 1.2rem;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+.full-ad-banner{
+    margin: 0;
+    padding: 0.5rem 10%;
+    width: 100%;
+}
+
+.ad-banner{
+    margin: 0;
+    padding: 0.5rem 0%;
+    width: 25%;
+}
+
+.item-gallery{
+    margin: 0;
+    padding: 1rem 5%;
+    align-items: center;
+    width: 70%;
+}
+
+.row{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.item{
+    width: 100%;
+}
+
+.item-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.item-category{
+    align-items: center;
+    color: hsl(0, 100%, 40%);
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    justify-content: space-between;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .85rem;
+}
+
+.item-title{
+    align-items: center;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.item-title.medium{
+    font-size: 0.8rem;
+}
+
+.item-title.small{
+    font-size: 0.7rem;
+}
+
+
+.item-author{
+    color: hsl(0, 0%, 27%);
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.item-author:hover{
+    color: hsl(0, 100%, 40%);
+}
